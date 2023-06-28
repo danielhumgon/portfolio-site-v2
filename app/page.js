@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import hero from "./assets/hero.svg";
 import js from "./assets/javascript.png";
 import react from "./assets/react.svg";
 import node from "./assets/node.svg";
@@ -19,6 +18,10 @@ import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
 import project4 from "./assets/project4.png";
+import gmail from "./assets/gmail.svg";
+import github from "./assets/github.svg";
+import linkedin from "./assets/linkedin.svg";
+import twitter from "./assets/twitter.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -124,9 +127,9 @@ const Carousel = () => {
 export default function Home() {
   return (
     <>
-      <header className="bg-sky-950">
+      {/* <header className="bg-sky-950">
         <h1>Logo</h1>
-      </header>
+      </header> */}
       <main className="bg-sky-950 p-6">
         {/* Hero Section */}
         <div className="flex flex-col w-full">
@@ -176,7 +179,7 @@ export default function Home() {
               <p className="text-sky-200 text-sm mt-2 mb-2">
                 A user-friendly NFT creator built on the BitcoinCash blockchain,
                 create and share unique digital assets with ease. Built with
-                React and SCSS.
+                React, Redux and SCSS.
               </p>
               <a
                 className="text-sky-100 underline hover:font-semibold"
@@ -202,7 +205,7 @@ export default function Home() {
               <p className="text-sky-200 text-sm mt-2 mb-2">
                 Dashboard app to authenticate files using the BitcoinCash
                 blockchain, tokenize and protects digital assets. Built with
-                Gatsby and AdminLTE.
+                Gatsby, Redux and AdminLTE.
               </p>
               <a
                 className="text-sky-100 underline hover:font-semibold"
@@ -267,8 +270,62 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Contact Section */}
+        <div className="mt-14">
+          <div className="border border-gray-100 opacity-20 w-11/12 m-auto mt-6 mb-6"></div>
+          <h2 className="text-sky-50 font-medium text-xl mb-3 mt-6">Contact</h2>
+          <p className="text-sky-200">
+            I am currently looking for a job opportunity, if you have questions
+            or just want to chat, feel free to send me a message and I will get
+            back to you!
+          </p>
+          <div className="flex justify-around mt-6">
+            <a href="mailto: danielhumgon@gmail.com">
+              <Image
+                className="w-12 h-12 m-auto"
+                src={gmail}
+                alt="gmail icon"
+              />
+            </a>
+            <a
+              href="https://github.com/danielhumgon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                className="w-12 h-12 m-auto"
+                src={github}
+                alt="github icon"
+              />
+            </a>
+            <a
+              href="https://twitter.com/danielhumgon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                className="w-12 h-12 m-auto"
+                src={twitter}
+                alt="twitter icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/danielhumgon/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                className="w-12 h-12 m-auto"
+                src={linkedin}
+                alt="linkedin icon"
+              />
+            </a>
+          </div>
+        </div>
       </main>
-      <footer className="bg-sky-950">2023 Copyright</footer>
+      <footer className="bg-sky-950 text-center p-4">
+        <p className="text-zinc-400 text-xs">&copy; Copyright {new Date().getFullYear()}, Daniel Gonzalez</p>
+      </footer>
     </>
   );
 }
