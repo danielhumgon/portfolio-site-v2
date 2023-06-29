@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+// import logo from "./assets/logo.svg"
 import js from "./assets/javascript.png";
 import react from "./assets/react.svg";
 import node from "./assets/node.svg";
@@ -127,28 +128,32 @@ const Carousel = () => {
 export default function Home() {
   return (
     <>
-      {/* <header className="bg-sky-950">
-        <h1>Logo</h1>
+      {/* <header className="bg-sky-950 p-3">
+        <Image className="h-8 w-10" src={logo} alt="logo" />
       </header> */}
       <main className="bg-sky-950 p-6">
         {/* Hero Section */}
-        <div className="flex flex-col w-full">
-          <h2 className="text-sky-200 text-5xl font-thin mb-2">Daniel</h2>
-          <h2 className="text-sky-200 text-5xl font-thin ml-4 mb-2">
+        <div className="flex flex-col w-full sm:text-left">
+          <h2 className="text-sky-200 text-5xl font-thin mb-2 sm:text-8xl sm:ml-24">
+            Daniel
+          </h2>
+          <h2 className="text-sky-200 text-5xl font-thin ml-4 mb-2 sm:text-8xl sm:ml-36">
             Gonzalez
           </h2>
-          <h3 className="text-sky-50 text-5xl ml-16 font-medium mb-2">
+          <h3 className="text-sky-50 text-5xl ml-16 font-medium mb-2 sm:text-8xl sm:ml-52">
             Fullstack
           </h3>
-          <h3 className="text-sky-50 text-5xl ml-24 font-medium mb-2">
+          <h3 className="text-sky-50 text-5xl ml-24 font-medium mb-2 sm:text-8xl sm:ml-64">
             Developer
           </h3>
-          <div className="border border-gray-100 opacity-20 w-11/12 self-center mt-6 mb-6"></div>
+          <div className="border border-gray-100 opacity-20 w-11/12 self-center mt-6 mb-6 sm:mt-12 sm:mb-16"></div>
         </div>
         {/* About Section */}
         <div>
-          <h2 className="text-sky-50 font-medium text-xl mb-3">About</h2>
-          <p className="text-sky-200 mb-12">
+          <h2 className="text-sky-50 font-medium text-xl mb-3 sm:text-3xl sm:mb-8">
+            About
+          </h2>
+          <p className="text-sky-200 mb-12 sm:w-3/4 sm:text-lg">
             Hello there! My name is Daniel Gonzalez, a Fullstack Developer with
             a passion for crafting beautiful and user-friendly websites. With
             over 5 years of experience in the industry, I specialize in creating
@@ -159,30 +164,36 @@ export default function Home() {
         </div>
         {/* Skills Carousel */}
         <div className="mb-14">
-          <h2 className="text-sky-50 font-medium text-xl mb-4">Skills</h2>
-          <Carousel />
+          <h2 className="text-sky-50 font-medium text-xl mb-4 sm:text-3xl sm:mb-8">
+            Skills
+          </h2>
+          <div className="sm:w-3/4 m-auto">
+            <Carousel />
+          </div>
         </div>
         {/* Projects Section */}
-        <h2 className="text-sky-50 font-medium text-xl mb-3">Projects</h2>
+        <h2 className="text-sky-50 font-medium text-xl mb-3 sm:text-3xl sm:mb-8">
+          Projects
+        </h2>
         <div className="flex flex-col gap-16">
           {/* Project 1 */}
           <div className="p-4">
             <Image
-              className="relative w-11/12 m-auto"
+              className="relative w-11/12 m-auto sm:rounded-t-2xl"
               src={project1}
               alt="token tiger"
             />
-            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10">
+            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
               Token Tiger
             </h3>
-            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center">
-              <p className="text-sky-200 text-sm mt-2 mb-2">
+            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                 A user-friendly NFT creator built on the BitcoinCash blockchain,
                 create and share unique digital assets with ease. Built with
                 React, Redux and SCSS.
               </p>
               <a
-                className="text-sky-100 underline hover:font-semibold"
+                className="text-sky-100 underline hover:font-semibold sm:text-xl"
                 href="https://tokentiger.com/"
                 target="_blank"
                 rel="noreferrer"
@@ -194,21 +205,21 @@ export default function Home() {
           {/* Project 2 */}
           <div className="p-4">
             <Image
-              className="relative w-11/12 m-auto"
+              className="relative w-11/12 m-auto sm:rounded-t-2xl"
               src={project2}
               alt="Launchpad IP Dashboard"
             />
-            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10">
+            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
               Launchpad IP Dashboard
             </h3>
-            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center">
-              <p className="text-sky-200 text-sm mt-2 mb-2">
+            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                 Dashboard app to authenticate files using the BitcoinCash
                 blockchain, tokenize and protects digital assets. Built with
                 Gatsby, Redux and AdminLTE.
               </p>
               <a
-                className="text-sky-100 underline hover:font-semibold"
+                className="text-sky-100 underline hover:font-semibold sm:text-xl"
                 href="https://launchpadip.net/"
                 target="_blank"
                 rel="noreferrer"
@@ -220,21 +231,21 @@ export default function Home() {
           {/* Project 3 */}
           <div className="p-4">
             <Image
-              className="relative w-11/12 m-auto"
+              className="relative w-11/12 m-auto sm:rounded-t-2xl"
               src={project3}
               alt="STATION 3"
             />
-            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10">
+            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
               STATION 3
             </h3>
-            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center">
-              <p className="text-sky-200 text-sm mt-2 mb-2">
+            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                 App built on the Avalanche Network for indie game developers to
                 showcase and distribute their games. Built with React, SCSS,
                 Three.js and Ethers.
               </p>
               <a
-                className="text-sky-100 underline hover:font-semibold"
+                className="text-sky-100 underline hover:font-semibold sm:text-xl"
                 href="https://www.stationthree.xyz/"
                 target="_blank"
                 rel="noreferrer"
@@ -246,21 +257,21 @@ export default function Home() {
           {/* Project 4 */}
           <div className="p-4">
             <Image
-              className="relative w-11/12 m-auto"
+              className="relative w-11/12 m-auto sm:rounded-t-2xl"
               src={project4}
               alt="Crypto Tracker & Wallet"
             />
-            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10">
+            <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
               Crypto Tracker & Wallet
             </h3>
-            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center">
-              <p className="text-sky-200 text-sm mt-2 mb-2">
+            <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                 App built using React and SCSS to track cryptocurrency prices.
                 Connects to MetaMask using Ethers, allows easy management of
                 your Energi tokens.
               </p>
               <a
-                className="text-sky-100 underline hover:font-semibold"
+                className="text-sky-100 underline hover:font-semibold sm:text-xl"
                 href="https://frontend-challenge-danielhumgon.vercel.app/wallet"
                 target="_blank"
                 rel="noreferrer"
@@ -272,14 +283,14 @@ export default function Home() {
         </div>
         {/* Contact Section */}
         <div className="mt-14">
-          <div className="border border-gray-100 opacity-20 w-11/12 m-auto mt-6 mb-6"></div>
-          <h2 className="text-sky-50 font-medium text-xl mb-3 mt-6">Contact</h2>
-          <p className="text-sky-200">
+          <div className="border border-gray-100 opacity-20 w-11/12 m-auto mt-6 mb-6 sm:mb-14"></div>
+          <h2 className="text-sky-50 font-medium text-xl mb-3 sm:text-3xl sm:mb-8">Contact</h2>
+          <p className="text-sky-200 mb-12 sm:w-3/4 sm:text-lg">
             I am currently looking for a job opportunity, if you have questions
             or just want to chat, feel free to send me a message and I will get
             back to you!
           </p>
-          <div className="flex justify-around mt-6">
+          <div className="flex justify-around mt-6 sm:justify-center sm:gap-8">
             <a href="mailto: danielhumgon@gmail.com">
               <Image
                 className="w-12 h-12 m-auto"
@@ -324,7 +335,9 @@ export default function Home() {
         </div>
       </main>
       <footer className="bg-sky-950 text-center p-4">
-        <p className="text-zinc-400 text-xs">&copy; Copyright {new Date().getFullYear()}, Daniel Gonzalez</p>
+        <p className="text-zinc-400 text-xs">
+          &copy; Copyright {new Date().getFullYear()}, Daniel Gonzalez
+        </p>
       </footer>
     </>
   );
