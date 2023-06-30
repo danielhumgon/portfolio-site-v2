@@ -189,10 +189,10 @@ export default function Home() {
                 src={project1}
                 alt="token tiger"
               />
-              <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
+              <h3 className="relative text-center text-sm shadow-lg text-zinc-950 bg-slate-200 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
                 Token Tiger
               </h3>
-              <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <div className="bg-sky-800 shadow-2xl rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
                 <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                   A user-friendly NFT creator built on the BitcoinCash
                   blockchain, create and share unique digital assets with ease.
@@ -215,10 +215,10 @@ export default function Home() {
                 src={project2}
                 alt="Launchpad IP Dashboard"
               />
-              <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
+              <h3 className="relative text-center text-sm shadow-lg text-zinc-950 bg-slate-200 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
                 Launchpad IP Dashboard
               </h3>
-              <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <div className="bg-sky-800 shadow-2xl rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
                 <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                   Dashboard app to authenticate files using the BitcoinCash
                   blockchain, tokenize and protects digital assets. Built with
@@ -241,10 +241,10 @@ export default function Home() {
                 src={project3}
                 alt="STATION 3"
               />
-              <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
+              <h3 className="relative text-center text-sm shadow-lg text-zinc-950 bg-slate-200 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
                 STATION 3
               </h3>
-              <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <div className="bg-sky-800 shadow-2xl rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
                 <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                   App built on the Avalanche Network for indie game developers
                   to showcase and distribute their games. Built with React,
@@ -267,10 +267,10 @@ export default function Home() {
                 src={project4}
                 alt="Crypto Tracker & Wallet"
               />
-              <h3 className="relative text-center text-sm text-zinc-950 bg-sky-500 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
+              <h3 className="relative text-center text-sm shadow-lg text-zinc-950 bg-slate-200 py-1 px-6 font-bold w-4/5 m-auto -mt-6 z-10 sm:text-xl sm:rounded-xl">
                 Crypto Tracker & Wallet
               </h3>
-              <div className="bg-sky-800 rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
+              <div className="bg-sky-800 shadow-2xl rounded-2xl p-4 -m-4 text-center sm:w-11/12 sm:m-auto sm:-mt-6">
                 <p className="text-sky-200 text-sm mt-2 mb-2 sm:text-xl sm:w-4/5 sm:m-auto sm:p-7">
                   App built using React and SCSS to track cryptocurrency prices.
                   Connects to MetaMask using Ethers, allows easy management of
