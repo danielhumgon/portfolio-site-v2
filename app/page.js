@@ -42,54 +42,54 @@ const Carousel = () => {
   return (
     <Slider {...settings}>
       <div>
-        <Image className="w-16 h-16 m-auto" src={js} alt="JavaScript skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={js} alt="JavaScript skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           JavaScript
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={react} alt="React skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={react} alt="React skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           React
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={node} alt="NodeJs skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={node} alt="NodeJs skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           NodeJS
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={mongo} alt="Mongo skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={mongo} alt="Mongo skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           MongoDB
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={next} alt="NextJS skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={next} alt="NextJS skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           NextJS
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={redux} alt="Redux skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={redux} alt="Redux skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           Redux
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={git} alt="Git skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={git} alt="Git skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">Git</p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={sass} alt="Sass skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={sass} alt="Sass skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           Sass
         </p>
       </div>
       <div>
         <Image
-          className="w-16 h-16 m-auto"
+          className="w-16 h-16 lg:w-24 lg:h-24 m-auto"
           src={tailwind}
           alt="Tailwind skill"
         />
@@ -98,25 +98,25 @@ const Carousel = () => {
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={gatsby} alt="Gatsby skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={gatsby} alt="Gatsby skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           Gatsby
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={ipfs} alt="IPFS skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={ipfs} alt="IPFS skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           IPFS
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={figma} alt="Figma skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={figma} alt="Figma skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           Figma
         </p>
       </div>
       <div>
-        <Image className="w-16 h-16 m-auto" src={ubuntu} alt="Ubuntu skill" />
+        <Image className="w-16 h-16 lg:w-24 lg:h-24 m-auto" src={ubuntu} alt="Ubuntu skill" />
         <p className="text-slate-50 text-xs font-light mt-2 text-center">
           Ubuntu
         </p>
@@ -134,9 +134,9 @@ export default function Home() {
       <main className="bg-sky-950 p-6">
         {/* Hero Section */}
         <div className="relative flex flex-col  w-full max-w-lg sm:text-left lg:text-left">
-          <div className="absolute top-7 -left-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob"></div>
-          <div className="absolute top-7 -right-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-500 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-2 left-40 w-32 h-32 sm:w-72 sm:h-72 bg-sky-600 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute top-7 -left-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-sm opacity-80 animate-blob"></div>
+          <div className="absolute top-7 -right-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-500 rounded-full mix-blend-multiply filter blur-sm opacity-80 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-2 left-40 w-32 h-32 sm:w-72 sm:h-72 bg-sky-600 rounded-full mix-blend-multiply filter blur-sm opacity-80 animate-blob animation-delay-4000"></div>
 
           <h2 className="text-sky-200 text-5xl font-thin mb-2 sm:text-8xl sm:ml-24 lg:text-9xl lg:ml-32">
             Daniel
