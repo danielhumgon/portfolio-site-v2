@@ -133,7 +133,11 @@ export default function Home() {
       </header> */}
       <main className="bg-sky-950 p-6">
         {/* Hero Section */}
-        <div className="flex flex-col w-full sm:text-left lg:text-left">
+        <div className="relative flex flex-col  w-full max-w-lg sm:text-left lg:text-left">
+          <div className="absolute top-7 -left-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob"></div>
+          <div className="absolute top-7 -right-4 w-32 h-32 sm:w-72 sm:h-72 bg-sky-500 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-2 left-40 w-32 h-32 sm:w-72 sm:h-72 bg-sky-600 rounded-full mix-blend-multiply filter blur-sm opacity-70 animate-blob animation-delay-4000"></div>
+
           <h2 className="text-sky-200 text-5xl font-thin mb-2 sm:text-8xl sm:ml-24 lg:text-9xl lg:ml-32">
             Daniel
           </h2>
